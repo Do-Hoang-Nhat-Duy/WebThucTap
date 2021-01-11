@@ -1,0 +1,175 @@
+body {
+  overflow-x: hidden;
+  min-height: 100vh; }
+
+#small {
+  text-align: center;
+  background-color: #2b130a;
+  color: #fff; }
+  #small a {
+    color: #fff;
+    font-size: 12px; }
+  #small a:hover {
+    color: brown; }
+
+.func {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  flex-direction: row !important; }
+  .func i {
+    font-size: 20px;
+    padding-right: 20px; }
+
+.mega_menu {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row; }
+  .mega_menu .sub_menu {
+    width: 220px; }
+    .mega_menu .sub_menu a {
+      color: black; }
+
+.divide {
+  color: rgba(108, 108, 108, 0.7);
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: underline; }
+
+#mega_menu_2 {
+  width: 450px;
+  padding-left: 10px; }
+  #mega_menu_2 a {
+    color: black; }
+
+#mega_menu_3 {
+  width: 250px;
+  padding-left: 10px; }
+  #mega_menu_3 a {
+    color: black; }
+
+.banner-img {
+  overflow: hidden; }
+
+.banner-container {
+  position: relative; }
+  .banner-container .banner-content {
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    text-align: center;
+    color: #fff;
+    font-size: 120%; }
+    .banner-container .banner-content h5 {
+      text-transform: uppercase; }
+      .banner-container .banner-content h5:before, .banner-container .banner-content h5:after {
+        position: absolute;
+        content: '';
+        width: 100px;
+        top: 10px;
+        height: 5px;
+        border-radius: 999px;
+        background-color: #fff; }
+      .banner-container .banner-content h5:before {
+        left: -55px; }
+      .banner-container .banner-content h5:after {
+        right: -55px; }
+    .banner-container .banner-content h4 {
+      text-transform: uppercase; }
+
+.image-container {
+  width: 100%;
+  height: auto; }
+  .image-container img {
+    max-width: 100%;
+    height: auto; }
+
+.card {
+  cursor: pointer;
+  text-decoration: none !important; }
+  .card .img {
+    width: 100%;
+    height: auto; }
+  .card p {
+    background-color: chocolate;
+    transition-duration: 0.4s;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid chocolate;
+    margin: 0; }
+  .card:hover p {
+    background-color: #fff;
+    border: 2px solid chocolate;
+    color: chocolate; }
+  .card.card--1 .card-body {
+    background-image: url("../images/grid-1.jpg"); }
+
+.background p {
+  text-align: justify; }
+.background .btn {
+  border-radius: 0;
+  background-color: chocolate;
+  color: #fff;
+  font-weight: bold;
+  width: 300px; }
+  .background .btn:hover {
+    color: #fff;
+    background-color: #333;
+    border: 1px solid chocolate; }
+.background.background--dark {
+  background-color: #301603;
+  color: #e9e2c3; }
+.background.background--white {
+  color: #000; }
+
+.footer-main {
+  background: #2f110f;
+  color: #fff; }
+  .footer-main h1 {
+    border-bottom: 1px solid #fff; }
+  .footer-main .uppercase {
+    text-transform: uppercase; }
+  .footer-main .btn-default {
+    background: #c34700;
+    color: #fff !important;
+    display: flex;
+    font-size: 85%;
+    justify-content: center; }
+  .footer-main .btn {
+    border-radius: 0;
+    background-color: chocolate;
+    color: #fff;
+    font-weight: bold;
+    width: 300px;
+    margin-top: 30px; }
+    .footer-main .btn:hover {
+      color: #fff;
+      background-color: #333;
+      border: 1px solid chocolate; }
+
+.footer-contactInfo {
+  text-align: center; }
+  .footer-contactInfo h2 {
+    font-size: 120%;
+    font-weight: 700;
+    color: #726a62; }
+  .footer-contactInfo a {
+    color: black; }
+    .footer-contactInfo a:hover {
+      color: black; }
+  .footer-contactInfo i {
+    color: chocolate;
+    padding-right: 10px; }
+
+.footer-links h4 {
+  padding-left: 30px; }
+.footer-links li {
+  list-style: none; }
+  .footer-links li a {
+    color: #333; }
+    .footer-links li a:hover {
+      color: chocolate; }
+
+/*# sourceMappingURL=style.css.map */
