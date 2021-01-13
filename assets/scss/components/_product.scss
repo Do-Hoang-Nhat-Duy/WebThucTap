@@ -1,0 +1,29 @@
+@import '../abstract/variables';
+
+.product-grid {
+  .product__item {
+    text-decoration: none;
+    .product__img {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .product__button {
+      display: block;
+      padding: 15px;
+      background-color: $color-4;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 18px;
+      color: #fff;
+      border: 3px solid $color-4;
+      border-radius: 0;
+    }
+
+    &:hover > .product__button {
+      background-color: white;
+      color: $color-4;
+    }
+  }
+}
