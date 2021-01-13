@@ -1,3 +1,8 @@
 @import 'layout/header';
 @import 'layout/footer';
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1034px;
+  }
+}
