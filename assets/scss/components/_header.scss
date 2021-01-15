@@ -12,7 +12,9 @@
 }
 .my-logo {
   position: absolute;
-  
+  background-color: white;
+  height: 70px;
+  width: 56px;
   img {
     width: 60px;
     filter: invert(10%)
@@ -61,9 +63,6 @@
     background-color: white;
   }
   .menu__item:hover {
-    & > .item__link {
-      font-weight: 700;
-    }
     & > .megamenu {
       display: flex;
     }

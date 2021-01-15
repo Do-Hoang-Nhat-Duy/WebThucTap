@@ -3,3 +3,23 @@ $color-2: #301603;
 $color-3: #330703;
 $color-4: #c34704;
 $color-5: #666;
+$color-6: #E9e2c3;
+$color-7: #99640b;
+$color-8: #402818;
+$color-9: #726a62;
+
+@mixin myBtn {
+  background-color: $color-4;
+  color: white;
+  border: 1px solid $color-7;
+  border-radius: 0;
+  padding: 10px 0 12px;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-8;
+  }
+}

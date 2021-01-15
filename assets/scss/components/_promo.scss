@@ -1,0 +1,29 @@
+@import '../abstract/variables';
+
+.promo {
+  padding: 40px 0;
+
+  .promo__name {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .promo__content {
+    text-align: justify;
+  }
+  .promo__img {
+    margin-bottom: 40px;
+  }
+  .promo__btn {
+    @include myBtn();
+    width: 400px;
+  }
+
+  &.promo-dark {
+    background-color: $color-2;
+    color: white;
+    
+    .promo__name {
+      color: $color-6;
+    }
+  }
+}

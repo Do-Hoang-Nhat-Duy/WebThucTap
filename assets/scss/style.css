@@ -19,6 +19,9 @@
 
 .my-logo {
   position: absolute;
+  background-color: white;
+  height: 70px;
+  width: 56px;
 }
 
 .my-logo img {
@@ -80,10 +83,6 @@
   background-color: white;
 }
 
-.my-menu .menu__item:hover > .item__link {
-  font-weight: 700;
-}
-
 .my-menu .menu__item:hover > .megamenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,8 +118,12 @@
   text-transform: uppercase;
 }
 
+.banner {
+  width: 100%;
+}
+
 .banner img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -154,5 +157,120 @@
   padding: 50px 0;
   background: url("../../../assets/images/footer.png");
   color: white;
+}
+
+.footer__main .footer__btn {
+  background-color: #c34704;
+  color: white;
+  border: 1px solid #99640b;
+  border-radius: 0;
+  padding: 10px 0 12px;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.footer__main .footer__btn:hover {
+  background-color: #402818;
+}
+
+.footer__contact {
+  padding: 50px 0;
+}
+
+.footer__contact h5 {
+  color: #726a62;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer__contact a {
+  display: block;
+  color: #000;
+}
+
+.footer__contact .footer__social {
+  border-left: 3px solid #a49990;
+}
+
+.footer__contact .footer__social ul {
+  list-style: none;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__contact .footer__social ul li img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__links {
+  color: #726a62;
+}
+
+.footer__links h5 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__links ul {
+  list-style: none;
+}
+
+@media (max-width: 991px) {
+  .footer__social {
+    border: 0;
+  }
+}
+
+.promo {
+  padding: 40px 0;
+}
+
+.promo .promo__name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo .promo__content {
+  text-align: justify;
+}
+
+.promo .promo__img {
+  margin-bottom: 40px;
+}
+
+.promo .promo__btn {
+  background-color: #c34704;
+  color: white;
+  border: 1px solid #99640b;
+  border-radius: 0;
+  padding: 10px 0 12px;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 400px;
+}
+
+.promo .promo__btn:hover {
+  background-color: #402818;
+}
+
+.promo.promo-dark {
+  background-color: #301603;
+  color: white;
+}
+
+.promo.promo-dark .promo__name {
+  color: #E9e2c3;
 }
 /*# sourceMappingURL=style.css.map */
