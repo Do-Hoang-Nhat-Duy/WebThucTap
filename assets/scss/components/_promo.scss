@@ -12,6 +12,11 @@
   }
   .promo__img {
     margin-bottom: 40px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   .promo__btn {
     @include myBtn();
@@ -25,5 +30,11 @@
     .promo__name {
       color: $color-6;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .promo__btn {
+    max-width: 100%;
   }
 }

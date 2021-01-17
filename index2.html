@@ -19,13 +19,13 @@
       <span class="text-uppercase">FREE SHIPPING ON EVERYTHING TO CONTINENTAL US</span>
       <span class="">100% Satisfaction Guarantee</span>
     </div>
-    <nav class="topnav">
+    <nav id="topnav" class="topnav sticky-top">
       <div class="container">
         <div class="my-logo">
-          <img src="/assets/images/cb_logo_web2.svg" alt="Company logo">
+          <img src="./assets/images/cb_logo_web2.svg" />
         </div>
-        <div class="my-nav sticky-top">
-          <ul class="my-menu">
+        <div class="my-nav">
+          <ul id="my-menu" class="my-menu">
             <li class="menu__item">
               <a class="item__link" href="#">Shop <i class="fas fa-chevron-down"></i></a>
               <ul class="megamenu megamenu-2">
@@ -75,12 +75,26 @@
               </ul>
             </li>
           </ul>
+          <ul class="my-func">
+            <li>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-user-alt"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+          <button id="toggle" class="d-block d-lg-none toggle">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-        </div>
+      </div>
     </nav>
   </header>
   <section class="banner w-100">
-    <img src="/assets/images/banner-1.png" alt="banner">
+    <img src="./assets/images/banner-1.png" alt="banner">
   </section>
   <section class="product-grid py-5">
     <div class="container">
@@ -141,7 +155,7 @@
         </div>
         <div class="col-12 col-lg-6 text-center">
           <div class="promo__img">
-            <img src="/assets/images/promo-1.svg" width="60%" alt="">
+            <img src="./assets/images/promo-1.svg" width="60%" alt="">
           </div>
           <a href="" class="btn promo__btn">Shop Gourmet Coffee</a>
         </div>
@@ -163,7 +177,7 @@
         </div>
         <div class="col-12 col-lg-6 text-center">
           <div class="promo__img">
-            <img src="/assets/images/promo-2.png" alt="">
+            <img src="./assets/images/promo-2.png" alt="">
           </div>
           <a href="" class="btn promo__btn">Shop Gourmet Coffee</a>
         </div>
@@ -183,7 +197,7 @@
         </div>
         <div class="col-12 col-lg-6 text-center">
           <div class="promo__img">
-            <img src="/assets/images/promo-3.png" alt="">
+            <img src="./assets/images/promo-3.png" alt="">
           </div>
           <a href="" class="btn promo__btn">Shop Gourmet Coffee</a>
         </div>
@@ -203,7 +217,7 @@
         </div>
         <div class="col-12 col-lg-6 text-center">
           <div class="promo__img">
-            <img src="/assets/images/promo-4.png" alt="">
+            <img src="./assets/images/promo-4.png" alt="">
           </div>
           <a href="" class="btn promo__btn">Shop Gourmet Coffee</a>
         </div>
@@ -240,14 +254,14 @@
             <h5>Find us on</h5>
             <ul>
               <li>
-                <img src="/assets/images/instagramsvg.svg" alt="">
+                <img src="./assets/images/instagramsvg.svg" alt="">
               </li>
               <li>
-                <img src="/assets/images/facebooksvg.svg" alt=""></li>
+                <img src="./assets/images/facebooksvg.svg" alt=""></li>
               <li>
-                <img src="/assets/images/twittersvg.svg" alt=""></li>
+                <img src="./assets/images/twittersvg.svg" alt=""></li>
               <li>
-                <img src="/assets/images/youtubesvg.svg" alt=""></li>
+                <img src="./assets/images/youtubesvg.svg" alt=""></li>
             </ul>
           </div>
         </div>
@@ -300,5 +314,26 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    const navbar = document.getElementById("topnav")
+    const toggle = document.getElementById("toggle")
+    const myMenu = document.getElementById("my-menu")
+    const sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky")
+      }
+    }
+
+    toggle.addEventListener('click', () => {
+      myMenu.classList.toggle('expand')
+    })
+    </script>
 </body>
 </html>
